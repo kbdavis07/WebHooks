@@ -14,6 +14,11 @@ namespace WebHook.Models
         /// </summary>
         public int OrderID { get; set; }
 
+        /// <summary>
+        /// User DeviceHash
+        /// </summary>
+        public string DeviceHash { get; set; }
+
         public DateTime OrderDate { get; set; }
         
         public decimal OrderTotal { get; set; }

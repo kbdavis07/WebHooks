@@ -14,7 +14,7 @@ namespace WebHook.WebHooks
     {
         private readonly Collection<WebHookFilter> filters = new Collection<WebHookFilter>
     {
-        new WebHookFilter { Name = "event1", Description = "This event happened." },
+        new WebHookFilter { Name = "New_Order", Description = "A New Order is Placed." },
         new WebHookFilter { Name = "event2", Description = "This event happened." },
     };
 
