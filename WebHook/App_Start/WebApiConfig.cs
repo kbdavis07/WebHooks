@@ -19,6 +19,16 @@ namespace WebHook
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            // Load Web API controllers and Azure Storage store
+            config.InitializeCustomWebHooks();
+            config.InitializeCustomWebHooksAzureStorage();
+            config.InitializeCustomWebHooksApis();
+
+            //Receiver
+            config.InitializeReceiveCustomWebHooks();
+
+
         }
     }
 }
